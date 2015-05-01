@@ -55,17 +55,40 @@ $(document).ready(function() {
 	//begin google maps API
 	//begin google maps API
 	//begin google maps API
-
-      function initialize() {
-        var mapCanvas = document.getElementById('map-canvas');
-        var mapOptions = {
-          center: new google.maps.LatLng(44.5403, -78.5463),
-          zoom: 8,
-          mapTypeId: google.maps.MapTypeId.ROADMAP
-        }
-        var map = new google.maps.Map(mapCanvas, mapOptions)
-      }
-      google.maps.event.addDomListener(window, 'load', initialize);
+var map;	// Google map object
+	
+	// Initialize and display a google map
+	function Init()
+	{
+		// Create a Google coordinate object for where to center the map
+		var latlng = new google.maps.LatLng( 44.931857, -89.662064 );	// Coordinates of Washington, DC (area centroid)
+		
+		// Map options for how to display the Google map
+		var mapOptions = { zoom: 15, center: latlng  };
+		
+		// Show the Google map in the div with the attribute id 'map-canvas'.
+		map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+		
+		// Place a standard Google Marker at the same location as the map center (Washington, DC)
+		// When you hover over the marker, it will display the title
+		var marker = new google.maps.Marker( { 
+			position: latlng,     
+			map: map,      
+			title: 'Howard Johnson',
+			animation: google.maps.Animation.DROP	// set marker to drop
+		});
+		
+		// Create an InfoWindow for the marker
+		var contentString = "<div class='info'><h2>Howard Johnson</h2><p>2101 N. Mountain Road</p><p>Wausau, WI 54401</p></div>";	// HTML text to display in the InfoWindow
+		var infowindow = new google.maps.InfoWindow( { content: contentString } );
+		
+		// Set event to display the InfoWindow anchored to the marker when the marker is clicked.
+		google.maps.event.addListener( marker, 'click', function() { infowindow.open( map, marker ); });
+	}
+	
+	// Call the method 'Init()' to display the google map when the web page is displayed ( load event )
+	google.maps.event.addDomListener( window, 'load', Init );
+    
 
 
 
