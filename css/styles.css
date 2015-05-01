@@ -81,6 +81,13 @@ nav ul li a {
 	margin: auto;
 }
 
+#wed_details ul {
+	list-style-type: none;
+	list-style-position: inside;
+	text-align: center;
+	padding: 0;
+}
+
 
 
 #our-story {
@@ -105,6 +112,11 @@ footer {
 	list-style-position: inside;
 	text-align: center;
 	padding: 0;
+}
+
+#accommodations {
+	text-align: center;
+	margin: auto;
 }
 
 
