@@ -8,6 +8,7 @@ styes for small screens
 body {
 	background-image: url("../img/green_gobbler.png");
 	font-size: 100%;   /* 1 em = 16px   */
+	margin: auto;
 }
 
 .main-wrapper {
@@ -119,10 +120,16 @@ footer {
 	margin: auto;
 }
 
+#map-canvas {
+	width: 100%;
+	height: 300px;
+	background-color: #CCC;
+	margin: auto;
+}
 
-
-
-
+#howard, #midway, #hampton, #days {
+	margin: auto;
+}
 
 
 
