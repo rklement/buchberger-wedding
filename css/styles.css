@@ -6,7 +6,7 @@ styes for small screens
 @media screen and (min-width: 320px) {
 
 body {
-	background-color: tomato;
+	background-image: url("../img/green_gobbler.png");
 	font-size: 100%;   /* 1 em = 16px   */
 }
 
@@ -75,16 +75,16 @@ nav ul li a {
 	max-width: 100%;
 }
 
-#our-story div h4 {
-	font-size: 1.5em;
+
+#wed_details {
+	text-align: center;
+	margin: auto;
 }
 
-#our-story h5, #our-story div h4 {
-	font-weight: bold;
-}
 
-#our-story h5 {
-	font-size: 1.1em;
+
+#our-story {
+	display: none;
 }
 
 footer {
@@ -118,4 +118,17 @@ footer {
 
 
 
+}
+
+
+#our-story div h4 {
+	font-size: 1.5em;
+}
+
+#our-story h5, #our-story div h4 {
+	font-weight: bold;
+}
+
+#our-story h5 {
+	font-size: 1.1em;
 }
