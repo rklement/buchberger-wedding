@@ -120,14 +120,14 @@ footer {
 	margin: auto;
 }
 
-#map-canvas {
+#map-canvas, #map-canvas2, #map-canvas3, #map-canvas4 {
 	width: 100%;
 	height: 300px;
 	background-color: #CCC;
 	margin: auto;
 }
 
-#howard, #midway, #hampton, #days {
+#howard, #quality, #hampton, #days {
 	margin: auto;
 }
 
