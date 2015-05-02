@@ -4,7 +4,7 @@ $(document).ready(function() {
 
 	//define all variables
 
-	var $button = $('.navigation img');
+	var $button = $('.navigation .button');
 	var $nav = $('nav');
 
 
@@ -15,7 +15,7 @@ $(document).ready(function() {
 	//begin slider function
 
 
-	//when hamburger button is pressed
+	//when menu button is pressed
 	$button.on('click', function(){
 
 		//if <ul> is hidden
@@ -26,8 +26,9 @@ $(document).ready(function() {
 				$nav.css('display', 'inline');
 			});
 
-			//change menu button from open to close
-			$button.attr('src', 'img/menu-close.svg')
+			//change menu button text to 'close'
+			$button.attr('value', 'Close');
+			
 		}
 
 		//if <ul> is currently showing
@@ -37,8 +38,9 @@ $(document).ready(function() {
 				$nav.css('display', 'none');	
 			});
 
-			//change menu button from close to open
-			$button.attr('src', 'img/menu.svg')
+			//change menu button text to 'Menu'
+			$button.attr('value', 'Menu');
+			
 		}
 	});
 
