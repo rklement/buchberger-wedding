@@ -1,3 +1,12 @@
+/*************************
+retina specific media query
+*************************/
+
+@media (-webkit-min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi) { 
+    background-image: url("../img/old_moon@2X.jpg");
+}
+
 
 /*************************
 styes for small/mobile screens
@@ -6,7 +15,7 @@ styes for small/mobile screens
 @media screen and (min-width: 320px) {
 
 	body {
-		background-image: url("../img/green_gobbler.png");
+		background-image: url("../img/old_moon.png");
 		font-size: 100%;   /* 1 em = 16px   */
 		margin: auto;
 	}
@@ -14,25 +23,135 @@ styes for small/mobile screens
 	.main-wrapper {
 		width: 95%;
 		margin: auto;
+		margin-top: .4375em; /* 7px */
 	}
 
 
-	#header-intro {
+	#home-intro, #wedparty-intro, #our-story-header, #rsvp-header{
 		width: 100%;
 		margin: auto;
 		text-align: center;
 	}
 
+	#wedparty-intro h1, #our-story-header h1, #rsvp-header h1 {
+		font-size: 3em; /* 48px */
+		font-family: 'Pinyon Script', cursive;
+
+	}
+
+	#wedparty-intro h3{
+		font-family: 'Playfair Display SC', serif;
+		color: tomato;
+		margin-bottom: .75em; /* 12px */
+		font-weight: bold;
+		font-size: 1.2em;
+	}
+
+	#wedparty-intro h1, #our-story-header, #rsvp-header {
+		font-weight: bold;
+	}
+
+
+	#wedparty-intro, #our-story-header, #rsvp-header {
+		margin-bottom: .625em; /* 10px */
+	}
+
+	#home-intro, #our-story-header, #wedparty-intro, #rsvp-header {
+		margin-top: 2em;  /* 32px */
+	}
+
+	#accommodations h1 {
+		/* margin context is 48 for whatever reason */
+		margin-top: .66666667em; /* 32px */
+		font-family: 'Pinyon Script', cursive;
+		font-size: 3em;  /* 48px */ 
+		font-weight: bold;
+		margin-bottom: .2083em; /* 10px */
+	}
+
+
+
+	#home-intro {
+		font-weight: bold;
+		font-family: 'Pinyon Script', cursive;
+	}
+
+
+
+
+	#home-intro h3 {
+		font-family: 'Playfair Display SC', serif;
+		margin-bottom: .75em; /* 12px */
+		color: tomato;
+	}
+
+	#home-intro h1 {
+		font-size: 3em; /* 48px */
+		margin-bottom: .1875em; /* 3px */
+	}
+
+	/*#home-intro h3:first-of-type {
+		color: tomato;
+	}*/
+
+	#details {
+		font-family: 'Pinyon Script', cursive;
+		font-size: 1.75em;  /* 28px */
+		margin-bottom: 1.5em;  /* 24px */
+		font-weight: bold;
+	}
+
+	#ceremony, #reception {
+		font-family: 'Playfair Display SC', serif;;
+	}
+
+	#ceremony h2, #reception h2, #bridesmaids h2, #groomsmen h2,
+	#ring-bearers h2, #groom h2, #bride h2 {
+		font-weight: bold;
+		font-size: 1.5em;  /* 24px */
+		margin-bottom: 1em;  /* 16px */
+		color: tomato;
+	}
+
+	#ceremony p, #reception p, .hotel-grouper p {
+		margin-bottom: .25em; /* 4px */
+	}
+
+	#ceremony {
+		margin-bottom: 1.5em;  /* 24px */
+	}
+
+	#reception li, .wedding-party li {
+		margin-bottom: .25em; /* 4px */
+	}
+
+	#reception {
+		margin-bottom: 2em; /* 36px */
+	}
+
+
+
 	#our-story {
 		width: 100%;
 		margin: auto;
-		text-align: center
+		text-align: center;
+		font-family: 'Playfair Display SC', serif;
+	}
+
+	.group:after {
+  	content: "";
+  	display: table;
+  	clear: both;
 	}
 
 	nav {
 		display: none;
 		width: 100%;
 		margin: auto;
+		font-family: 'Playfair Display SC', serif;
+		margin-bottom: 2em;  /* 32px  */
+		margin-top: 1em;  /* 16px  */
+
 	}
 
 	nav ul {
@@ -46,11 +165,10 @@ styes for small/mobile screens
 		list-style-type: none;
 		list-style-position: outside;
 		margin-bottom: 5px;
-		width: 100%;
-		border-top: solid 1px black;
-		border-bottom: solid 1px black;
+		width: 50%;
 		padding-top: 5px;
-		padding-bottom: 5px;	
+		padding-bottom: 5px;
+		float: left;	
 	}
 
 	nav ul li a {
@@ -69,11 +187,25 @@ styes for small/mobile screens
 	.navigation img {
 		width: 48px;
 		height: 48px;
+		
 	}
 
 	.navigation .button {
-		
+		background-color: tomato;
+		border: none;
+		font-size: 1.5em;
+		font-family: 'Playfair Display SC', serif;
 	}
+
+	.navigation .button:hover {
+		background-color: white;		
+	}
+
+	.main-banner-photo {
+		margin-bottom: .75em;  /* 12px  */
+		display: block;
+	}
+
 
 	.main-banner-photo img {
 
@@ -96,17 +228,13 @@ styes for small/mobile screens
 	}
 
 
-
-	#our-story {
-		display: none;
-	}
-
 	footer {
 		width: 100%;
 		margin: auto;
 		text-align: center;
-		font-size: .5em;  /* 8px  */
+		font-size: .625em;  /* 10px  */
 		margin-bottom: 10px;
+		font-family: 'Playfair Display SC', serif;
 	}
 
 	#bridesmaids, #groomsmen, #ring-bearers {
@@ -119,6 +247,14 @@ styes for small/mobile screens
 		list-style-position: inside;
 		text-align: center;
 		padding: 0;
+	}
+
+	.wedding-party li:first-child {
+		font-weight: bold;
+	}
+
+	#ring-bearers .wedding-party li {
+		font-weight: normal;
 	}
 
 	#accommodations {
@@ -137,18 +273,72 @@ styes for small/mobile screens
 		margin: auto;
 	}
 
-
-	#our-story div h4 {
-	font-size: 1.5em;
+	#bridesmaids {
+		margin-top: 1em;
 	}
 
-	#our-story h5, #our-story div h4 {
-	font-weight: bold;
+
+
+	#bridesmaids, #groomsmen, #ring-bearers {
+		margin-bottom: 1em;
+		font-family: 'Playfair Display SC', serif;
 	}
 
-	#our-story h5 {
-		font-size: 1.1em;
+	#ring-bearers {
+		margin-bottom: 2em;
 	}
+
+	#bride {
+		margin-bottom: 1em;
+	}
+
+	#groom {
+		margin-bottom: 2em;
+	}
+
+	#bride p, #groom p {
+		font-family: 'Crimson Text', serif;
+	}
+
+	.hotel-grouper h2 {
+		font-size: 1.5em;  /* 24px */
+		font-family: 'Playfair Display SC', serif;
+		margin-bottom: .5em;
+	}
+
+	.hotel-grouper h2 > a:visited {
+		color: tomato;
+	}
+
+	footer a {
+		color: black;
+	}
+
+
+	.hotel-grouper p {
+		font-family: 'Playfair Display SC', serif;
+		font-size: 1em;
+	}
+
+	.hotel-grouper {
+		margin-bottom: 1em;
+	}
+
+	#quality .hotel-grouper h2,
+	#howard .hotel-grouper h2,
+	#hampton .hotel-grouper h2,
+	#days .hotel-grouper h2 {
+		/* context is 24 */
+		margin-top: 1.5em; /* 12px */
+	}
+
+	#days {
+		margin-bottom: 2em;
+	}
+
+
+
+
 
 }
 
@@ -156,7 +346,7 @@ styes for small/mobile screens
 /********************************
 styes for tablets/small laptops
 ********************************/
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 720px) {
 
 	.navigation {
 		display: none;

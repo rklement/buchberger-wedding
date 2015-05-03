@@ -23,7 +23,7 @@ $(document).ready(function() {
 
 			//display <ul> using slide toggle
 			$nav.slideToggle(300, 'linear', function(){
-				$nav.css('display', 'inline');
+				$nav.css('display', 'block');
 			});
 
 			//change menu button text to 'close'
