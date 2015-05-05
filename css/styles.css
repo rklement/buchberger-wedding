@@ -12,7 +12,7 @@ retina specific media query
 styes for small/mobile screens
 *************************/
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 250px) {
 
 	body {
 		background-image: url("../img/old_moon.png");
@@ -273,8 +273,8 @@ styes for small/mobile screens
 		margin: auto;
 	}
 
-	#bridesmaids {
-		margin-top: 1em;
+	#bridesmaids, #our-story {
+		margin-top: 2em;
 	}
 
 
@@ -336,6 +336,13 @@ styes for small/mobile screens
 		margin-bottom: 2em;
 	}
 
+	.typewriter {
+		border: 1px solid gray;
+	}
+
+	#rsvp-body {
+		font-family: 'Crimson Text', serif;
+	}
 
 
 
