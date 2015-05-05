@@ -15,7 +15,7 @@ styes for small/mobile screens
 @media screen and (min-width: 250px) {
 
 	body {
-		background-image: url("../img/old_moon.png");
+		background-image: url("../img/subtle_grunge.png");
 		font-size: 100%;   /* 1 em = 16px   */
 		margin: auto;
 	}
@@ -144,6 +144,8 @@ styes for small/mobile screens
   	clear: both;
 	}
 
+
+
 	nav {
 		display: none;
 		width: 100%;
@@ -164,11 +166,17 @@ styes for small/mobile screens
 	nav ul li {
 		list-style-type: none;
 		list-style-position: outside;
-		margin-bottom: 5px;
-		width: 50%;
+		width: 100%;
 		padding-top: 5px;
 		padding-bottom: 5px;
-		float: left;	
+		display: block;
+		margin: 0 auto 10px auto;
+		border: 2px solid black;
+		background-color: tomato;
+	}
+
+	nav ul li:hover {
+		background-color: white;
 	}
 
 	nav ul li a {
@@ -342,12 +350,48 @@ styes for small/mobile screens
 
 	#rsvp-body {
 		font-family: 'Crimson Text', serif;
+		margin: auto;
+		text-align: center;
 	}
 
 
 
 
 }
+
+
+/********************************
+large mobile devices
+********************************/
+
+@media screen and (min-width: 550px) {
+
+	nav ul li {
+	
+
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		width: 45%;
+		margin: 5px 2.5% 5px 2.5%;
+		float: left;
+	}
+
+	nav ul li a {
+		text-decoration: none;
+		color: black;
+		text-align: center;
+		font-size: 1.5em;	
+	}
+
+
+
+}
+
+
+
+
+
 
 
 /********************************
