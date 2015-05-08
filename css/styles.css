@@ -53,27 +53,22 @@ styes for small/mobile screens
 
 
 	#wedparty-intro, #our-story-header, #rsvp-header {
-		margin-bottom: .625em; /* 10px */
+		margin-bottom: 2em; /* 10px */
 	}
 
 	#home-intro, #our-story-header, #wedparty-intro, #rsvp-header {
 		margin-top: 2em;  /* 32px */
+
 	}
 
-	#accommodations h1 {
-		/* margin context is 48 for whatever reason */
-		margin-top: .66666667em; /* 32px */
-		font-family: 'Pinyon Script', cursive;
-		font-size: 3em;  /* 48px */ 
-		font-weight: bold;
-		margin-bottom: .2083em; /* 10px */
-	}
+	
 
 
 
 	#home-intro {
 		font-weight: bold;
 		font-family: 'Pinyon Script', cursive;
+		margin-bottom: 2em;
 	}
 
 
@@ -151,7 +146,7 @@ styes for small/mobile screens
 		width: 100%;
 		margin: auto;
 		font-family: 'Playfair Display SC', serif;
-		margin-bottom: 2em;  /* 32px  */
+		margin-bottom: 3em;  /* 48px  */
 		margin-top: 1em;  /* 16px  */
 
 	}
@@ -159,7 +154,6 @@ styes for small/mobile screens
 	nav ul {
 		text-align: center;
 		width: 100%;
-		margin: none;
 		padding: 0;
 	}
 
@@ -183,7 +177,8 @@ styes for small/mobile screens
 		text-decoration: none;
 		color: black;
 		text-align: center;
-		font-size: 1.5em;	
+		font-size: 1.5em;
+	
 	}
 
 	.navigation, .main-banner-photo {
@@ -192,15 +187,10 @@ styes for small/mobile screens
 		display: block;
 	}
 
-	.navigation img {
-		width: 48px;
-		height: 48px;
-		
-	}
 
 	.navigation .button {
 		background-color: tomato;
-		border: none;
+		border: 2px solid black;
 		font-size: 1.5em;
 		font-family: 'Playfair Display SC', serif;
 	}
@@ -226,6 +216,8 @@ styes for small/mobile screens
 	#wed_details {
 		text-align: center;
 		margin: auto;
+		margin-bottom: 3em;
+		margin-top: 1.5em;
 	}
 
 	#wed_details ul {
@@ -268,13 +260,25 @@ styes for small/mobile screens
 	#accommodations {
 		text-align: center;
 		margin: auto;
+		margin-bottom: 3em;
+	
+	}
+
+	#accommodations h1 {
+		/* margin context is 48 for whatever reason */
+		margin-top: .66666667em; /* 32px */
+		font-family: 'Pinyon Script', cursive;
+		font-size: 3em;  /* 48px */ 
+		font-weight: bold;
+		margin-bottom: .66666667em; /* 32px */
 	}
 
 	#map-canvas, #map-canvas2, #map-canvas3, #map-canvas4 {
 		width: 100%;
-		height: 250px;
+		height: 200px;
 		background-color: #CCC;
 		margin: auto;
+		border: 2px solid gray;
 	}
 
 	#howard, #quality, #hampton, #days {
@@ -283,6 +287,10 @@ styes for small/mobile screens
 
 	#bridesmaids, #our-story {
 		margin-top: 2em;
+	}
+
+	#our-story {
+		margin-bottom: 3em;
 	}
 
 
@@ -300,9 +308,7 @@ styes for small/mobile screens
 		margin-bottom: 1em;
 	}
 
-	#groom {
-		margin-bottom: 2em;
-	}
+	
 
 	#bride p, #groom p {
 		font-family: 'Crimson Text', serif;
@@ -352,7 +358,49 @@ styes for small/mobile screens
 		font-family: 'Crimson Text', serif;
 		margin: auto;
 		text-align: center;
+		width: 100%;
+		margin-top: 2em;
+		margin-bottom: 3em;
 	}
+
+	#rsvp-body p {
+		margin-bottom: 1em;
+	}
+
+
+
+	#dinner-choices li {
+		margin-bottom: .25em;
+	}
+
+	.info {
+		margin: 0 1em 0 1em;
+		font-family: 'Playfair Display SC', serif;
+	}
+
+	.info h2 {
+		font-weight: bold;
+		font-size: 1.5em; 
+		margin-bottom: .5em;
+	}
+
+	.info li {
+		margin-bottom: .30em;
+	}
+
+	.info a:visited, .info a {
+		color: black;
+	}
+
+	.info a:hover {
+		color: tomato;
+	}
+
+	#party-container {
+		margin-bottom: 3em;
+	}
+
+
 
 
 
@@ -366,38 +414,39 @@ large mobile devices
 
 @media screen and (min-width: 550px) {
 
-	nav ul li {
-	
 
+	.main-wrapper {
+		width: 90%;
+	}
+	
+	nav ul li {
 		-webkit-box-sizing: border-box;
 		-moz-box-sizing: border-box;
 		box-sizing: border-box;
-		width: 45%;
-		margin: 5px 2.5% 5px 2.5%;
+		width: 48%;
+	/*	margin: 5px 2.5% 5px 2.5%;*/
+		margin-top: 5px;
+		margin-bottom: 5px;
 		float: left;
 	}
 
-	nav ul li a {
-		text-decoration: none;
-		color: black;
-		text-align: center;
-		font-size: 1.5em;	
+	nav ul li:nth-child(odd) {
+		margin-left: 0;
+		margin-right: 2%;
 	}
 
-
+	nav ul li:nth-child(even) {
+		margin-right: 0;
+		margin-left: 2%;
+	}
 
 }
-
-
-
-
-
 
 
 /********************************
 styes for tablets/small laptops
 ********************************/
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 780px) {
 
 	.navigation {
 		display: none;
@@ -405,7 +454,102 @@ styes for tablets/small laptops
 
 	nav {
 		display: block;
+		padding: .5em 0 .5em 0;
+		border-bottom: 3px double black;
+		border-top: 3px double black;
 	}
+
+	nav ul {
+		text-align: center;
+	}
+
+
+	.group .nav-list {
+		display: inline-block;
+		width: 20%;
+		margin: 0;
+		background: none;
+		border: none;
+	}
+
+	/*.group .nav-list:first-child {
+		margin-right: -2em;
+	}
+*/
+
+	nav ul li a {
+		font-size: 1.1em;
+	}
+
+
+	nav ul li a:hover {
+		color: tomato;
+		border-bottom: 1px tomato solid;
+	}
+
+
+
+	#home-intro h3 {
+		font-size: 1.2em;
+	}
+
+	#home-intro h1 {
+		font-size: 4em; /* 64px */
+		margin-bottom: .1875em; /* 3px */
+	}
+
+	#wedparty-intro h1, #our-story-header h1, #rsvp-header h1, #accomodations h1 {
+		font-size: 4em; /* 64px */
+	}
+
+	#wedparty-intro h3 {
+		font-size: 1.5em;
+	}
+
+
+
+	#home-intro h1:last-child {
+		margin-bottom: .5em;
+	}
+
+	#details {
+
+		font-size: 2.5em; /* 40px */
+	}
+
+	#ceremony, #reception {
+		/*separate ceremony and reception info into two columns */
+		width: 50%;
+		float: left;
+		margin-bottom: none;
+	}
+
+	#bride, #groom {
+		/* separate bride and groom into separate columns*/
+		width: 50%;
+		float: left;
+	}
+
+
+	
+
+	footer {
+		clear: both;
+	}
+
+	#wed_details {
+		clear: both;
+	}
+
+	#howard, #quality, #hampton, #days {
+		width: 47.5%;
+		float: left;
+	}
+
+	#howard, #hampton {
+		margin-right: 5%;
+	}
+
 
 
 
