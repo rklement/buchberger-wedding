@@ -202,6 +202,7 @@ styes for small/mobile screens
 	.main-banner-photo {
 		margin-bottom: .75em;  /* 12px  */
 		display: block;
+		max-width: 1000px;
 	}
 
 
@@ -460,17 +461,22 @@ styes for tablets/small laptops
 	}
 
 	nav ul {
+		/* using flexbox for nav layout*/
 		text-align: center;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
 	}
 
 
 	.group .nav-list {
-		display: inline-block;
-		width: 20%;
-		margin: 0;
+		width: 17%;
+		margin: auto;
 		background: none;
 		border: none;
 	}
+
 
 	/*.group .nav-list:first-child {
 		margin-right: -2em;
@@ -478,7 +484,7 @@ styes for tablets/small laptops
 */
 
 	nav ul li a {
-		font-size: 1.1em;
+		font-size: 1.4em;
 	}
 
 
