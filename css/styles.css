@@ -1,12 +1,65 @@
+/*styles currently not working in IE 6, 7, 8 */
+
+
+/* ADD WEB FONTS  */
+
+
+@font-face {
+    font-family: 'Playfair-Display-SC-Bold';
+    src:url('../fonts/Playfair-Display-SC-Bold.ttf.woff') format('woff'),
+        url('../fonts/Playfair-Display-SC-Bold.ttf.svg#Playfair-Display-SC-Bold') format('svg'),
+        url('../fonts/Playfair-Display-SC-Bold.ttf.eot'),
+        url('../fonts/Playfair-Display-SC-Bold.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Crimson-Text';
+    src:url('../fonts/Crimson-Text.ttf.woff') format('woff'),
+        url('../fonts/Crimson-Text.ttf.svg#Crimson-Text') format('svg'),
+        url('../fonts/Crimson-Text.ttf.eot'),
+        url('../fonts/Crimson-Text.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pinyon-Script';
+    src:url('../fonts/Pinyon-Script.ttf.woff') format('woff'),
+        url('../fonts/Pinyon-Script.ttf.svg#Pinyon-Script') format('svg'),
+        url('../fonts/Pinyon-Script.ttf.eot'),
+        url('../fonts/Pinyon-Script.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Playfair-Display-SC';
+    src:url('../fonts/Playfair-Display-SC.ttf.woff') format('woff'),
+        url('../fonts/Playfair-Display-SC.ttf.svg#Playfair-Display-SC') format('svg'),
+        url('../fonts/Playfair-Display-SC.ttf.eot'),
+        url('../fonts/Playfair-Display-SC.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
 /*************************
 retina specific media query
 *************************/
 
+
+
 @media (-webkit-min-device-pixel-ratio: 2), 
-(min-resolution: 192dpi) { 
+(min-resolution: 192dpi) {
+
+body { 
     background-image: url("../img/old_moon@2X.jpg");
 }
 
+}
 
 /*************************
 styes for small/mobile screens
@@ -35,15 +88,14 @@ styes for small/mobile screens
 
 	#wedparty-intro h1, #our-story-header h1, #rsvp-header h1 {
 		font-size: 3em; /* 48px */
-		font-family: 'Pinyon Script', cursive;
+		font-family: 'Pinyon-Script', cursive;
 
 	}
 
 	#wedparty-intro h3{
-		font-family: 'Playfair Display SC', serif;
+		font-family: 'Playfair-Display-SC-Bold', serif;
 		color: tomato;
 		margin-bottom: .75em; /* 12px */
-		font-weight: bold;
 		font-size: 1.2em;
 	}
 
@@ -61,13 +113,19 @@ styes for small/mobile screens
 
 	}
 
+	.special {
+		font-family: 'Pinyon-Script', serif;
+		font-size: 1.5em;
+		font-weight: 900;
+	}
+
 	
 
 
 
 	#home-intro {
 		font-weight: bold;
-		font-family: 'Pinyon Script', cursive;
+		font-family: 'Pinyon-Script', serif;
 		margin-bottom: 2em;
 	}
 
@@ -75,7 +133,7 @@ styes for small/mobile screens
 
 
 	#home-intro h3 {
-		font-family: 'Playfair Display SC', serif;
+		font-family: 'Playfair-Display-SC', serif;
 		margin-bottom: .75em; /* 12px */
 		color: tomato;
 	}
@@ -85,19 +143,17 @@ styes for small/mobile screens
 		margin-bottom: .1875em; /* 3px */
 	}
 
-	/*#home-intro h3:first-of-type {
-		color: tomato;
-	}*/
+
 
 	#details {
-		font-family: 'Pinyon Script', cursive;
+		font-family: 'Pinyon-Script', serif;
 		font-size: 1.75em;  /* 28px */
 		margin-bottom: 1.5em;  /* 24px */
 		font-weight: bold;
 	}
 
 	#ceremony, #reception {
-		font-family: 'Playfair Display SC', serif;;
+		font-family: 'Playfair-Display-SC', serif;;
 	}
 
 	#ceremony h2, #reception h2, #bridesmaids h2, #groomsmen h2,
@@ -107,6 +163,7 @@ styes for small/mobile screens
 		margin-bottom: 1em;  /* 16px */
 		color: tomato;
 	}
+
 
 	#ceremony p, #reception p, .hotel-grouper p {
 		margin-bottom: .25em; /* 4px */
@@ -130,7 +187,7 @@ styes for small/mobile screens
 		width: 100%;
 		margin: auto;
 		text-align: center;
-		font-family: 'Playfair Display SC', serif;
+		font-family: 'Playfair-Display-SC', serif;
 	}
 
 	.group:after {
@@ -145,7 +202,7 @@ styes for small/mobile screens
 		display: none;
 		width: 100%;
 		margin: auto;
-		font-family: 'Playfair Display SC', serif;
+		font-family: 'Playfair-Display-SC', serif;
 		margin-bottom: 3em;  /* 48px  */
 		margin-top: 1em;  /* 16px  */
 
@@ -192,7 +249,7 @@ styes for small/mobile screens
 		background-color: tomato;
 		border: 2px solid black;
 		font-size: 1.5em;
-		font-family: 'Playfair Display SC', serif;
+		font-family: 'Playfair-Display-SC', serif;
 	}
 
 	.navigation .button:hover {
@@ -235,7 +292,7 @@ styes for small/mobile screens
 		text-align: center;
 		font-size: .625em;  /* 10px  */
 		margin-bottom: 10px;
-		font-family: 'Playfair Display SC', serif;
+		font-family: 'Playfair-Display-SC', serif;
 	}
 
 	#bridesmaids, #groomsmen, #ring-bearers {
@@ -250,9 +307,6 @@ styes for small/mobile screens
 		padding: 0;
 	}
 
-	.wedding-party li:first-child {
-		font-weight: bold;
-	}
 
 	#ring-bearers .wedding-party li {
 		font-weight: normal;
@@ -268,7 +322,7 @@ styes for small/mobile screens
 	#accommodations h1 {
 		/* margin context is 48 for whatever reason */
 		margin-top: .66666667em; /* 32px */
-		font-family: 'Pinyon Script', cursive;
+		font-family: 'Pinyon-Script', serif;
 		font-size: 3em;  /* 48px */ 
 		font-weight: bold;
 		margin-bottom: .66666667em; /* 32px */
@@ -298,7 +352,7 @@ styes for small/mobile screens
 
 	#bridesmaids, #groomsmen, #ring-bearers {
 		margin-bottom: 1em;
-		font-family: 'Playfair Display SC', serif;
+		font-family: 'Playfair-Display-SC', serif;
 	}
 
 	#ring-bearers {
@@ -312,18 +366,24 @@ styes for small/mobile screens
 	
 
 	#bride p, #groom p {
-		font-family: 'Crimson Text', serif;
+		font-family: 'Crimson-Text', serif;
 	}
 
 	.hotel-grouper h2 {
 		font-size: 1.5em;  /* 24px */
-		font-family: 'Playfair Display SC', serif;
+		font-family: 'Playfair-Display-SC', serif;
 		margin-bottom: .5em;
+	}
+
+	.hotel-grouper h2 > a:link {
+		color: tomato;
 	}
 
 	.hotel-grouper h2 > a:visited {
 		color: tomato;
 	}
+
+
 
 	footer a {
 		color: black;
@@ -331,7 +391,7 @@ styes for small/mobile screens
 
 
 	.hotel-grouper p {
-		font-family: 'Playfair Display SC', serif;
+		font-family: 'Playfair-Display-SC', serif;
 		font-size: 1em;
 	}
 
@@ -356,7 +416,7 @@ styes for small/mobile screens
 	}
 
 	#rsvp-body {
-		font-family: 'Crimson Text', serif;
+		font-family: 'Crimson-Text', serif;
 		margin: auto;
 		text-align: center;
 		width: 100%;
@@ -376,7 +436,7 @@ styes for small/mobile screens
 
 	.info {
 		margin: 0 1em 0 1em;
-		font-family: 'Playfair Display SC', serif;
+		font-family: 'Playfair-Display-SC', serif;
 	}
 
 	.info h2 {
@@ -425,7 +485,6 @@ large mobile devices
 		-moz-box-sizing: border-box;
 		box-sizing: border-box;
 		width: 48%;
-	/*	margin: 5px 2.5% 5px 2.5%;*/
 		margin-top: 5px;
 		margin-bottom: 5px;
 		float: left;
@@ -463,9 +522,19 @@ styes for tablets/small laptops
 	nav ul {
 		/* using flexbox for nav layout*/
 		text-align: center;
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
 		display: flex;
+		-webkit-flex-direction: row;
+		-moz-flex-direction: row;
 		flex-direction: row;
+		-webkit-justify-content: center;
+		-moz-justify-content: center;
 		justify-content: center;
+		-webkit-align-items: center;
+		-moz-align-items: center;
 		align-items: center;
 	}
 
@@ -477,11 +546,6 @@ styes for tablets/small laptops
 		border: none;
 	}
 
-
-	/*.group .nav-list:first-child {
-		margin-right: -2em;
-	}
-*/
 
 	nav ul li a {
 		font-size: 1.4em;
@@ -504,7 +568,7 @@ styes for tablets/small laptops
 		margin-bottom: .1875em; /* 3px */
 	}
 
-	#wedparty-intro h1, #our-story-header h1, #rsvp-header h1, #accomodations h1 {
+	#wedparty-intro h1, #our-story-header h1, #rsvp-header h1, #accommodations h1 {
 		font-size: 4em; /* 64px */
 	}
 
@@ -556,13 +620,36 @@ styes for tablets/small laptops
 		margin-right: 5%;
 	}
 
+	#bridesmaids, #groomsmen {
+		width: 50%;
+		float: left;
+		margin-bottom: 2em;
+	}
+
+	#groomsmen {
+		margin-top: 2em;
+	}
+
+	#ring-bearers {
+		width: 50%;
+		float: left;
+	}
+
+}
 
 
+/********************************
+1000 pixels plus
+********************************/
+
+@media screen and (min-width: 1000px) { 
+
+	#bridesmaids, #groomsmen, #ring-bearers {
+		width: 33.33333333%;
+		float: left;
+		margin-top: 2em;
+	}
 
 
-
-
-
-
-}                                      
+}                                    
                                                                                                                                                                                                                                                                                                           "
