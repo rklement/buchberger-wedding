@@ -2,7 +2,48 @@
 
 
 /* ADD WEB FONTS  */
+/* ADD WEB FONTS  */
 
+
+@font-face {
+    font-family: 'cac_champagneregular';
+    src: url('../fonts/cac_champagne-webfont.eot');
+    src: url('../fonts/cac_champagne-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/cac_champagne-webfont.woff2') format('woff2'),
+         url('../fonts/cac_champagne-webfont.woff') format('woff'),
+         url('../fonts/cac_champagne-webfont.ttf') format('truetype'),
+         url('../fonts/cac_champagne-webfont.svg#cac_champagneregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'england_hand_dbregular';
+    src: url('../fonts/england-webfont.eot');
+    src: url('../fonts/england-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/england-webfont.woff2') format('woff2'),
+         url('../fonts/england-webfont.woff') format('woff'),
+         url('../fonts/england-webfont.ttf') format('truetype'),
+         url('../fonts/england-webfont.svg#england_hand_dbregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'great_vibesregular';
+    src: url('../fonts/greatvibes-regular-webfont.eot');
+    src: url('../fonts/greatvibes-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/greatvibes-regular-webfont.woff2') format('woff2'),
+         url('../fonts/greatvibes-regular-webfont.woff') format('woff'),
+         url('../fonts/greatvibes-regular-webfont.ttf') format('truetype'),
+         url('../fonts/greatvibes-regular-webfont.svg#great_vibesregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 @font-face {
     font-family: 'Playfair-Display-SC-Bold';
@@ -88,7 +129,7 @@ styes for small/mobile screens
 
 	#wedparty-intro h1, #our-story-header h1, #rsvp-header h1 {
 		font-size: 3em; /* 48px */
-		font-family: 'Pinyon-Script', cursive;
+		font-family: 'Pinyon-Script', serif;
 
 	}
 
@@ -99,9 +140,9 @@ styes for small/mobile screens
 		font-size: 1.2em;
 	}
 
-	#wedparty-intro h1, #our-story-header, #rsvp-header {
+	/*#wedparty-intro h1, #our-story-header, #rsvp-header {
 		font-weight: bold;
-	}
+	}*/
 
 
 	#wedparty-intro, #our-story-header, #rsvp-header {
@@ -116,7 +157,7 @@ styes for small/mobile screens
 	.special {
 		font-family: 'Pinyon-Script', serif;
 		font-size: 1.5em;
-		font-weight: 900;
+		/*font-weight: 900;*/
 	}
 
 	
@@ -124,7 +165,7 @@ styes for small/mobile screens
 
 
 	#home-intro {
-		font-weight: bold;
+	/*	font-weight: bold;*/
 		font-family: 'Pinyon-Script', serif;
 		margin-bottom: 2em;
 	}
@@ -149,7 +190,7 @@ styes for small/mobile screens
 		font-family: 'Pinyon-Script', serif;
 		font-size: 1.75em;  /* 28px */
 		margin-bottom: 1.5em;  /* 24px */
-		font-weight: bold;
+		/*font-weight: bold;*/
 	}
 
 	#ceremony, #reception {
@@ -324,7 +365,7 @@ styes for small/mobile screens
 		margin-top: .66666667em; /* 32px */
 		font-family: 'Pinyon-Script', serif;
 		font-size: 3em;  /* 48px */ 
-		font-weight: bold;
+		/*font-weight: bold;*/
 		margin-bottom: .66666667em; /* 32px */
 	}
 
@@ -461,7 +502,10 @@ styes for small/mobile screens
 		margin-bottom: 3em;
 	}
 
-
+	#hotel-details  {
+		font-family: 'Crimson-Text', serif;
+		margin: 2em auto 0 auto;
+	}
 
 
 
@@ -633,6 +677,10 @@ styes for tablets/small laptops
 	#ring-bearers {
 		width: 50%;
 		float: left;
+	}
+
+	#hotel-details {
+		max-width: 500px;
 	}
 
 }
