@@ -515,14 +515,11 @@ styes for small/mobile screens
 		float: left;
 		max-width: 50%;
 		display: block;
-		margin-right: 20px;
-		margin-bottom: 20px;
-		margin-top: 20px;
+		margin-right: 15px;
+		margin-bottom: 15px;
+		margin-top: 15px;
 		border: 1px gray solid;
 	}
-
-
-
 
 }
 
@@ -565,9 +562,9 @@ large mobile devices
 }
 
 
-/********************************
-styes for tablets/small laptops
-********************************/
+/*************************************
+STYLES FOR TABLETS/SMALL LAPTOPS 780PX
+*************************************/
 @media screen and (min-width: 780px) {
 
 	.navigation {
@@ -592,13 +589,30 @@ styes for tablets/small laptops
 		-webkit-flex-direction: row;
 		-moz-flex-direction: row;
 		flex-direction: row;
-		-webkit-justify-content: center;
-		-moz-justify-content: center;
-		justify-content: center;
+		-webkit-justify-content: space-between;
+		-moz-justify-content: space-between;
+		justify-content: space-between;
 		-webkit-align-items: center;
 		-moz-align-items: center;
 		align-items: center;
+
 	}
+
+	/* ASSIGNING FLEX GROW VALUES TO LIST ITEMS*/
+
+
+	.nav-list {
+		flex-grow: 1;
+	}
+
+	.nav-list.med {
+		flex-grow: 8;
+	}
+
+	.nav-list.large {
+		flex-grow: 6;
+	}
+
 
 
 	.group .nav-list {
@@ -606,6 +620,7 @@ styes for tablets/small laptops
 		margin: auto;
 		background: none;
 		border: none;
+
 	}
 
 
@@ -701,7 +716,59 @@ styes for tablets/small laptops
 		max-width: 500px;
 	}
 
+
+	/* STYLES FOR COLUMNS ON THEIR STORY PAGE*/
+
+	#column1 {
+		float: left;
+		width: 45%;
+		margin-right: 2.5%;
+		margin-left: 2.5%;
+	}
+
+	#column2 {
+		float: right;
+		width: 45%;
+		margin-left: 2.5%;
+		margin-right: 2.5%;
+	}
+
+	#intextphoto {
+		width: 100%;
+		display: inline;
+	}
+
+	#intextphoto img {
+		float: none;
+		max-width: 90%;
+		margin: 15px auto 15px auto;
+	}
+
+
+
 }
+
+
+/*********************
+965 PIXELS - FLEX GROW
+*********************/
+
+	/* ASSIGNING FLEX GROW VALUES TO LIST ITEMS*/
+
+
+	/*.nav-list.small {
+		flex-grow: 1;
+	}*/
+
+	.nav-list.medium {
+		flex-grow: 2;
+	}
+
+	/*.nav-list.large {
+		flex-grow: 6;
+	}*/
+
+
 
 
 /********************************
@@ -718,6 +785,24 @@ styes for tablets/small laptops
 
 	#map-canvas, #map-canvas2, #map-canvas3, #map-canvas4 {
 		height: 350px;
+	}
+
+	#intextphoto img {
+		float: left;
+		max-width: 50%;
+		margin: 15px 15px 20px 0;
+	}
+
+
+	/* ASSIGNING FLEX GROW VALUES TO LIST ITEMS*/
+
+
+	.nav-list.med {
+		flex-grow: 3;
+	}
+
+	.nav-list.large {
+		flex-grow: 3;
 	}
 
 
