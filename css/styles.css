@@ -228,7 +228,11 @@ styes for small/mobile screens
 		width: 100%;
 		margin: auto;
 		text-align: center;
-		font-family: 'Playfair-Display-SC', serif;
+		font-family: 'Crimson-Text', serif;
+	}
+
+	#our-story p {
+		margin-bottom: 15px;
 	}
 
 	.group:after {
@@ -507,6 +511,16 @@ styes for small/mobile screens
 		margin: 2em auto 0 auto;
 	}
 
+	#intextphoto img {
+		float: left;
+		max-width: 50%;
+		display: block;
+		margin-right: 20px;
+		margin-bottom: 20px;
+		margin-top: 20px;
+		border: 1px gray solid;
+	}
+
 
 
 
@@ -542,6 +556,10 @@ large mobile devices
 	nav ul li:nth-child(even) {
 		margin-right: 0;
 		margin-left: 2%;
+	}
+
+	#map-canvas, #map-canvas2, #map-canvas3, #map-canvas4 {
+		height: 300px;
 	}
 
 }
@@ -696,6 +714,10 @@ styes for tablets/small laptops
 		width: 33.33333333%;
 		float: left;
 		margin-top: 2em;
+	}
+
+	#map-canvas, #map-canvas2, #map-canvas3, #map-canvas4 {
+		height: 350px;
 	}
 
 
