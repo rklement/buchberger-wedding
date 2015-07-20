@@ -194,8 +194,9 @@ styes for small/mobile screens
 	}
 
 	#ceremony, #reception {
-		font-family: 'Playfair-Display-SC', serif;;
+		font-family: 'Playfair-Display-SC', serif;
 	}
+
 
 	#ceremony h2, #reception h2, #bridesmaids h2, #groomsmen h2,
 	#ring-bearers h2, #groom h2, #bride h2 {
@@ -229,6 +230,9 @@ styes for small/mobile screens
 		margin: auto;
 		text-align: center;
 		font-family: 'Crimson-Text', serif;
+		margin-bottom: 3em;
+		margin-top: 2.5em;
+
 	}
 
 	#our-story p {
@@ -319,7 +323,7 @@ styes for small/mobile screens
 	#wed_details {
 		text-align: center;
 		margin: auto;
-		margin-bottom: 3em;
+		margin-bottom: 2em;
 		margin-top: 1.5em;
 	}
 
@@ -385,19 +389,23 @@ styes for small/mobile screens
 		margin: auto;
 	}
 
-	#bridesmaids, #our-story {
+	#bridesmaids {
 		margin-top: 2em;
 	}
 
-	#our-story {
-		margin-bottom: 3em;
-	}
+
+
+	
 
 
 
 	#bridesmaids, #groomsmen, #ring-bearers {
 		margin-bottom: 1em;
 		font-family: 'Playfair-Display-SC', serif;
+	}
+
+	#bridesmaids, #groomsmen {
+		margin-bottom: 3em;
 	}
 
 	#ring-bearers {
@@ -503,7 +511,7 @@ styes for small/mobile screens
 	}
 
 	#party-container {
-		margin-bottom: 3em;
+		margin-bottom: 2em;
 	}
 
 	#hotel-details  {
@@ -664,12 +672,26 @@ STYLES FOR TABLETS/SMALL LAPTOPS 780PX
 		font-size: 2.5em; /* 40px */
 	}
 
-	#ceremony, #reception {
-		/*separate ceremony and reception info into two columns */
-		width: 50%;
+	/*separate ceremony and reception info into two columns */
+	#ceremony {
+		width: 45%;
+		margin-right: 2.5%;
+		margin-left: 2.5%;
 		float: left;
 		margin-bottom: none;
 	}
+
+	#reception {
+		width: 45%;
+		margin-right: 2.5%;
+		margin-left: 2.5%;
+		float: right;
+		margin-bottom: none;
+	}
+
+
+
+
 
 	#bride, #groom {
 		/* separate bride and groom into separate columns*/
@@ -777,11 +799,7 @@ STYLES FOR TABLETS/SMALL LAPTOPS 780PX
 
 @media screen and (min-width: 1000px) { 
 
-	#bridesmaids, #groomsmen, #ring-bearers {
-		width: 33.33333333%;
-		float: left;
-		margin-top: 2em;
-	}
+	
 
 	#map-canvas, #map-canvas2, #map-canvas3, #map-canvas4 {
 		height: 350px;
@@ -804,6 +822,87 @@ STYLES FOR TABLETS/SMALL LAPTOPS 780PX
 	.nav-list.large {
 		flex-grow: 3;
 	}
+
+	#bridesmaids {
+		width: 30%;
+		margin-right: 5%;
+		margin-left: 0%;
+		float: left;
+		margin-top: 2em;
+	}
+
+	#groomsmen {
+		width: 30%;
+		float: left;
+		margin-top: 2em;
+	}
+
+	#ring-bearers {
+		width: 30%;
+		float: left;
+		margin-left: 5%;
+		margin-right: 0%;
+		margin-top: 2em;
+	}
+
+}
+
+
+
+	/********************************
+	1200 pixels plus
+	********************************/
+@media screen and (min-width: 1200px) { 
+
+	#ceremony {
+		width: 40%;
+		margin-right: 5%;
+		margin-left: 5%;
+		float: left;
+		margin-bottom: none;
+	}
+
+	#reception {
+		width: 40%;
+		margin-right: 5%;
+		margin-left: 5%;
+		float: right;
+		margin-bottom: none;
+	}
+
+	#bridesmaids {
+		width: 25%;
+		margin-left: 7.5%;
+		margin-right: 2.5%;
+
+	}
+
+	#groomsmen {
+		width: 25%;
+		margin-left: 2.5%;
+		margin-right: 2.5%;
+	}
+
+	#ring-bearers {
+		width: 25%;
+		margin-right: 7.5%;
+		margin-left: 2.5%;
+	}
+
+	#column1 {
+		width: 35%;
+		margin-right: 2.5%;
+		margin-left: 12.5%;
+	}
+
+	#column2 {
+		width: 35%;
+		margin-left: 2.5%;
+		margin-right: 12.5%;
+	}
+
+
+
 
 
 }                                    
