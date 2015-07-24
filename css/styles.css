@@ -193,6 +193,13 @@ styes for small/mobile screens
 		/*font-weight: bold;*/
 	}
 
+	#details p:first-child {
+		font-family: 'Playfair-Display-SC', serif;
+		color: tomato;
+		font-size: 32px;
+		margin-bottom: 20px;
+	}
+
 	#ceremony, #reception {
 		font-family: 'Playfair-Display-SC', serif;
 	}
@@ -237,6 +244,7 @@ styes for small/mobile screens
 
 	#our-story p {
 		margin-bottom: 15px;
+		font-size: 18px;
 	}
 
 	.group:after {
@@ -479,6 +487,7 @@ styes for small/mobile screens
 
 	#rsvp-body p {
 		margin-bottom: 1em;
+		font-size: 18px; 
 	}
 
 
@@ -517,6 +526,7 @@ styes for small/mobile screens
 	#hotel-details  {
 		font-family: 'Crimson-Text', serif;
 		margin: 2em auto 0 auto;
+		font-size: 18px;
 	}
 
 	#intextphoto img {
@@ -524,6 +534,16 @@ styes for small/mobile screens
 		max-width: 50%;
 		display: block;
 		margin-right: 15px;
+		margin-bottom: 15px;
+		margin-top: 15px;
+		border: 1px gray solid;
+	}
+
+	#intextphoto2 img, #intextphoto3 img {
+		float: right;
+		max-width: 50%;
+		display: block;
+		margin-left: 15px;
 		margin-bottom: 15px;
 		margin-top: 15px;
 		border: 1px gray solid;
@@ -610,14 +630,20 @@ STYLES FOR TABLETS/SMALL LAPTOPS 780PX
 
 
 	.nav-list {
+		-webkit-flex-grow: 1;
+		-moz-flex-grow: 1;
 		flex-grow: 1;
 	}
 
 	.nav-list.med {
+		-webkit-flex-grow: 8;
+		-moz-flex-grow: 8;
 		flex-grow: 8;
 	}
 
 	.nav-list.large {
+		-webkit-flex-grow: 6;
+		-moz-flex-grow: 6;
 		flex-grow: 6;
 	}
 
@@ -760,11 +786,12 @@ STYLES FOR TABLETS/SMALL LAPTOPS 780PX
 		display: inline;
 	}
 
-	#intextphoto img {
+	#intextphoto img, #intextphoto2 img, #intextphoto3 img {
 		float: none;
 		max-width: 90%;
 		margin: 15px auto 15px auto;
 	}
+
 
 
 
@@ -783,6 +810,8 @@ STYLES FOR TABLETS/SMALL LAPTOPS 780PX
 	}*/
 
 	.nav-list.medium {
+		-webkit-flex-grow: 2;
+		-moz-flex-grow: 2;
 		flex-grow: 2;
 	}
 
@@ -811,15 +840,26 @@ STYLES FOR TABLETS/SMALL LAPTOPS 780PX
 		margin: 15px 15px 20px 0;
 	}
 
+	#intextphoto2 img, #intextphoto3 img {
+		float: right;
+		max-width: 50%;
+		margin: 15px 0 20px 15px;
+
+	}
+
 
 	/* ASSIGNING FLEX GROW VALUES TO LIST ITEMS*/
 
 
 	.nav-list.med {
+		-webkit-flex-grow: 3;
+		-moz-flex-grow: 3;
 		flex-grow: 3;
 	}
 
 	.nav-list.large {
+		-webkit-flex-grow: 3;
+		-moz-flex-grow: 3;
 		flex-grow: 3;
 	}
 
